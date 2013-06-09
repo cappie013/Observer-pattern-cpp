@@ -5,16 +5,16 @@ CXX		=	g++
 RM		=	rm -f
 
 CXXFLAGS	=	-W -Wextra -Wall -O3
-CXXFLAGS	+=	-Iheaders/
+CXXFLAGS	+=	-Iheaders/ -I../src/headers/
 
 LDFLAGS		=	
 
-SRCS		=	main.cpp	\
-			AObserver.cpp	\
-			ASubject.cpp	\
-			Notifier.cpp	\
-			Jewel.cpp	\
-			Door.cpp	\
+SRCS		=	../src/AObserver.cpp	\
+			../src/ASubject.cpp	\
+			../src/Notifier.cpp	\
+			main.cpp		\
+			Jewel.cpp		\
+			Door.cpp		\
 			Guard.cpp
 
 OBJS		=	$(SRCS:.cpp=.o)
